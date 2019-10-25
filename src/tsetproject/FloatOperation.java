@@ -5,11 +5,11 @@ package tsetproject;
  *
  * @author Speed
  */
-public  interface  FloatOperation {
+public  abstract class  FloatOperation {
   
   
-   public abstract int add();
-   public abstract int sub();
-   public abstract int mult();
-   public abstract int divide();
+   public abstract int add(int a, int b);
+   public abstract int sub(int a, int b);
+   public abstract int mult(int a, int b);
+   public abstract int divide(int a, int b);
 }
