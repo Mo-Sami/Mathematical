@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tsetproject;
 
-/**
- *
- * @author Fatma
- */
-public class FloatOperation {
+
+public class FloatOperation extends Calculator{
+   private double a,b;
+
+    public FloatOperation(int a, int b,double x, double y) {
+        super(a, b);
+        this.a=x;
+        this.b=y;
+         }
+
+    public FloatOperation() {
+    }
     
+    
+   
 }
