@@ -1,12 +1,15 @@
 
 package tsetproject;
 
-public abstract class FloatOperation {
+/**
+ *
+ * @author Speed
+ */
+public  interface  FloatOperation {
   
-    public FloatOperation() {
-    }
-    public abstract int add();
-    public abstract int sub();
+  
+   public abstract int add();
+   public abstract int sub();
    public abstract int mult();
    public abstract int divide();
 }
