@@ -1,19 +1,12 @@
 
 package tsetproject;
 
-
-public class FloatOperation extends Calculator{
-   private double a,b;
-
-    public FloatOperation(int a, int b,double x, double y) {
-        super(a, b);
-        this.a=x;
-        this.b=y;
-         }
-
+public abstract class FloatOperation {
+  
     public FloatOperation() {
     }
-    
-    
-   
+    public abstract int add();
+    public abstract int sub();
+   public abstract int mult();
+   public abstract int divide();
 }
