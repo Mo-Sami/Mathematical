@@ -1,27 +1,30 @@
 
 package tsetproject;
 
-public class Calculator {
-    private int a ,b;
+public class Calculator extends FloatOperation {
+   
     public Calculator(int a, int b){
-        this.a = a;
-        this.b = b;
+      
     }
   
     public Calculator(){
  
     }
-    public static int add(int a, int b){
-        return a + b;
+    @Override
+    public int add(int a, int b){
+        return a + b ;
     }
-     public static int sub(int a, int b){
+    @Override
+     public int sub(int a, int b){
         return a - b;
      }
-     public static int mult(int a,int b){
+    @Override
+     public int mult(int a, int b){
          return a*b;
          
      }
-     public static int divide(int a ,int b){
+    @Override
+     public int divide(int a, int b){
          if(b!=0){
               return a/b;
          }
