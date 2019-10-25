@@ -1,36 +1,31 @@
-
 package tsetproject;
 
-public class Calculator implements FloatOperation {
-   
-    public Calculator(int a, int b){
-      
+public class Calculator extends FloatOperation {
+
+    public Calculator(int a, int b) {
+
     }
 
     public Calculator() {
     }
-    
-   
-    public int add(int a, int b){
-        return a + b ;
+
+    @Override
+    public int add(int a, int b) {
+        return a + b;
     }
-   
-     public int sub(int a, int b){
+
+    @Override
+    public int sub(int a, int b) {
         return a - b;
-     }
-    
-     public int mult(int a, int b){
-         return a*b;
-         
-     }
-  
-     public int divide(int a, int b){
-         if(b!=0){
-              return a/b;
-         }
-         else{
-             return -1;
-         }
-     } 
-  
+    }
+
+    @Override
+    public int mult(int a, int b) {
+        return a * b;
+    }
+
+    @Override
+    public int divide(int a, int b) {
+        return (b != 0) ? a / b : -1;
+    }
 }
